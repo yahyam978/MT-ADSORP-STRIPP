@@ -83,7 +83,7 @@ while curr_X > X2 and steps < 50:
     # 2. Vertical to Operating Line
     if next_X > X2:
         next_Y = (L_prime / V_prime) * (next_X - X2) + Y2
-        ax.vlines(next_X, curr_Y, next_y, colors='green', alpha=0.5)
+        ax.vlines(next_X, curr_Y, next_Y, colors='green', alpha=0.5)
         curr_X, curr_Y = next_X, next_Y
     else:
         ax.vlines(next_X, curr_Y, Y2, colors='green', alpha=0.5)
